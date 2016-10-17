@@ -1,11 +1,11 @@
-﻿namespace Azure.CopyFilesSample
-{
-    using Microsoft.WindowsAzure;
-    using Microsoft.WindowsAzure.Storage;
-    using System;
-    using System.IO;
-    using System.Threading.Tasks;
+﻿using Microsoft.WindowsAzure;
+using Microsoft.WindowsAzure.Storage;
+using System;
+using System.IO;
+using System.Threading.Tasks;
 
+namespace Azure.CopyFilesSample
+{
     public class Program
     {
         static void Main()
