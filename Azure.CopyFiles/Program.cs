@@ -14,7 +14,7 @@ namespace Azure.CopyFilesSample
             try
             {
                 CopyFilesAsync().Wait();
-                Console.WriteLine("Successfully copied files to Azure Blob Storage");
+                Console.WriteLine("Successfully copying files to Azure Blob Storage");
             }
             catch (FormatException)
             {
