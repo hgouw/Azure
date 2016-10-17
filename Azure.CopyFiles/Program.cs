@@ -13,7 +13,7 @@
             Console.WriteLine("Started copying files to Azure Blob Storage");
             try
             {
-                CopyFilesAsync("Employees.xml").Wait();
+                CopyFilesAsync().Wait();
                 Console.WriteLine("Successfully copied files to Azure Blob Storage");
             }
             catch (FormatException)
@@ -31,7 +31,7 @@
             Console.ReadLine();
         }
 
-        private static async Task CopyFilesAsync(string files)
+        private static async Task CopyFilesAsync()
         {
             var storageAccount = CreateStorageAccountFromConnectionString(CloudConfigurationManager.GetSetting("StorageAccountConnectionString"));
 
@@ -40,8 +40,13 @@
             var blobContainer = blobClient.GetContainerReference(CloudConfigurationManager.GetSetting("ContainerName"));
             await blobContainer.CreateIfNotExistsAsync();
 
-            var blockBlob = blobContainer.GetBlockBlobReference(files);
-            await blockBlob.UploadFromFileAsync(files, FileMode.Open);
+            var files = Directory.GetFiles(CloudConfigurationManager.GetSetting("DataFolder"));
+            Array.Sort(files, StringComparer.InvariantCulture);
+            foreach (var file in files)
+            {
+                var blockBlob = blobContainer.GetBlockBlobReference(Path.GetFileName(file));
+                await blockBlob.UploadFromFileAsync(file, FileMode.Open);
+            }
         }
 
         private static CloudStorageAccount CreateStorageAccountFromConnectionString(string storageConnectionString)
