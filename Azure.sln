@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.ProcessFiles", "Azure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Local.DataAccess", "Local.DataAccess\Local.DataAccess.csproj", "{F024AF41-77BE-4672-8723-47D66B15777B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.DataAccess", "Azure.DataAccess\Azure.DataAccess.csproj", "{C8F99288-5027-4927-AA0A-44A3B9E00C30}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F024AF41-77BE-4672-8723-47D66B15777B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F024AF41-77BE-4672-8723-47D66B15777B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F024AF41-77BE-4672-8723-47D66B15777B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8F99288-5027-4927-AA0A-44A3B9E00C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8F99288-5027-4927-AA0A-44A3B9E00C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8F99288-5027-4927-AA0A-44A3B9E00C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8F99288-5027-4927-AA0A-44A3B9E00C30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
