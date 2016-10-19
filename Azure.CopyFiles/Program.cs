@@ -18,8 +18,8 @@ namespace Azure.CopyFiles
             {
                 CopyFilesAsync().Wait();
                 Console.WriteLine("Successfully copying files to Azure Blob Storage");
-                //SaveFiles();
-                //Console.WriteLine("Successfully saving files to SQL Server Database");
+                SaveFilesAsynch().Wait();
+                Console.WriteLine("Successfully saving files to SQL Server Database");
             }
             catch (FormatException)
             {
@@ -54,7 +54,7 @@ namespace Azure.CopyFiles
             }
         }
 
-        private static void SaveFiles()
+        private static async Task SaveFilesAsynch()
         {
             var files = Directory.GetFiles(CloudConfigurationManager.GetSetting("DataFolder"));
             Array.Sort(files, StringComparer.InvariantCulture);
@@ -70,9 +70,17 @@ namespace Azure.CopyFiles
                         employees.Add(new Employee { Name = node["Name"].InnerText, Location = node["Location"].InnerText });
                     }
                     db.Employees.AddRange(employees);
-                    db.SaveChanges();
+                    await SaveChangesAsynch(db);
                 }
             }
+        }
+
+        private static Task SaveChangesAsynch(AzureTestModelContainer db)
+        {
+            return Task.Run(() =>
+            {
+                db.SaveChanges();
+            });
         }
 
         private static CloudStorageAccount CreateStorageAccountFromConnectionString(string storageConnectionString)
