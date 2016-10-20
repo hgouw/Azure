@@ -92,6 +92,10 @@
     <Content Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Azure.DatabaseContext\Azure.DatabaseContext.csproj">
+      <Project>{ba475b5f-17bb-4855-a1e4-8f199706a57d}</Project>
+      <Name>Azure.DatabaseContext</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Local.DataAccess\Local.DataAccess.csproj">
       <Project>{f024af41-77be-4672-8723-47d66b15777b}</Project>
       <Name>Local.DataAccess</Name>
