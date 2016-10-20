@@ -129,16 +129,16 @@ namespace Azure.ParseFiles
                         casedoc.Mnc_Year = elMnc.Attribute("year").Value;
                     }
 
-                    //try
-                    //{
-                    int d_day = int.Parse(elCase.Element("headnote").Element("caseinfo").Element("courtinfo").Element("dates").Element("decdate").Attribute("day").Value);
-                    int d_mon = int.Parse(elCase.Element("headnote").Element("caseinfo").Element("courtinfo").Element("dates").Element("decdate").Attribute("month").Value);
-                    int d_yr = int.Parse(elCase.Element("headnote").Element("caseinfo").Element("courtinfo").Element("dates").Element("decdate").Attribute("year").Value);
-                    casedoc.DecisionDate = new DateTime(d_yr, d_mon, d_day);
-                    //}
-                    //catch (Exception ex)
-                    //{
-                    //}
+                    try
+                    {
+                        int d_day = int.Parse(elCase.Element("headnote").Element("caseinfo").Element("courtinfo").Element("dates").Element("decdate").Attribute("day").Value);
+                        int d_mon = int.Parse(elCase.Element("headnote").Element("caseinfo").Element("courtinfo").Element("dates").Element("decdate").Attribute("month").Value);
+                        int d_yr = int.Parse(elCase.Element("headnote").Element("caseinfo").Element("courtinfo").Element("dates").Element("decdate").Attribute("year").Value);
+                        casedoc.DecisionDate = new DateTime(d_yr, d_mon, d_day);
+                    }
+                    catch (Exception ex)
+                    {
+                    }
 
                     if (elCase.Element("headnote").Element("catchwordgrp") != null)
                     {
