@@ -9,8 +9,12 @@
     <Location>New York City</Location>
   </Employee>
   <Employee>
+    <Name>Prudence Murdoch</Name>
+    <Location>Sydney</Location>
+  </Employee>
+  <Employee>
     <Name>Elisabeth Murdoch</Name>
-    <Location>New York City</Location>
+    <Location>London</Location>
   </Employee>
   <Employee>
     <Name>Lachlan Murdoch</Name>
@@ -21,7 +25,11 @@
     <Location>New York City</Location>
   </Employee>
   <Employee>
-    <Name>Lachlan Murdoch</Name>
+    <Name>Grace Murdoch</Name>
+    <Location>New York City</Location>
+  </Employee>
+  <Employee>
+    <Name>Chloe Murdoch</Name>
     <Location>New York City</Location>
   </Employee>
 </Employees>

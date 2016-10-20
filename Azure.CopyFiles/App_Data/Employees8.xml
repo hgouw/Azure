@@ -1,15 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Employees>
   <Employee>
-    <Name>Frank Packer</Name>
-    <Location>R.I.P.</Location>
+    <Name>Bill Gates</Name>
+    <Location>Seattle</Location>
   </Employee>
   <Employee>
-    <Name>Kerry Packer</Name>
-    <Location>R.I.P.</Location>
-  </Employee>
-  <Employee>
-    <Name>James Packer</Name>
-    <Location>Sydney</Location>
+    <Name>Melanie Gates</Name>
+    <Location>Seattle</Location>
   </Employee>
 </Employees>

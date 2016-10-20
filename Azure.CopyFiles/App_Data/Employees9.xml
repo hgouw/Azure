@@ -1,27 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Employees>
   <Employee>
-    <Name>Lang Hancock</Name>
+    <Name>Steve Jobs</Name>
     <Location>R.I.P.</Location>
   </Employee>
   <Employee>
-    <Name>Gina Rinehart</Name>
-    <Location>Perth</Location>
+    <Name>Laurene Powell</Name>
+    <Location>Palo Alto</Location>
   </Employee>
   <Employee>
-    <Name>John Hayward-Hancock</Name>
-    <Location>Perth</Location>
+    <Name>Reed Jobs</Name>
+    <Location>Palo Alto</Location>
   </Employee>
   <Employee>
-    <Name>Bianca Hayward</Name>
-    <Location>Perth</Location>
+    <Name>Erin Jobs</Name>
+    <Location>Palo Alto</Location>
   </Employee>
   <Employee>
-    <Name>Hope Rinehart</Name>
-    <Location>Perth</Location>
-  </Employee>
-  <Employee>
-    <Name>Ginia Rinehart</Name>
-    <Location>Perth</Location>
+    <Name>Eve Jobs</Name>
+    <Location>Palo Alto</Location>
   </Employee>
 </Employees>
