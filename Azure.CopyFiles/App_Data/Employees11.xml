@@ -1,15 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Employees>
   <Employee>
-    <Name>Peter Wallis</Name>
-    <Location>Chatswood</Location>
+    <Name>Queen Elizabeth II</Name>
+    <Location>London</Location>
   </Employee>
   <Employee>
-    <Name>Shahed Kazi</Name>
-    <Location>Chatswood</Location>
+    <Name>Prince Philip</Name>
+    <Location>London</Location>
   </Employee>
   <Employee>
-    <Name>Herman Gouw</Name>
-    <Location>Chatswood</Location>
+    <Name>Princess Anne</Name>
+    <Location>London</Location>
+  </Employee>
+  <Employee>
+    <Name>Prince Charles</Name>
+    <Location>London</Location>
+  </Employee>
+  <Employee>
+    <Name>Prince Andrew</Name>
+    <Location>London</Location>
+  </Employee>
+  <Employee>
+    <Name>Prince Edward</Name>
+    <Location>London</Location>
   </Employee>
 </Employees>
