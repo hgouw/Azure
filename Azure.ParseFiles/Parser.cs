@@ -28,7 +28,7 @@ namespace Azure.ParseFiles
             string sep = "<caseml";
 
             //string correction = "<?xml version=\"1.0\" encoding=\"utf-8\"?><!DOCTYPE caseml PUBLIC \"-//Butterworths//DTD XML CASE REPORTS VER 1.0//EN\" \"caseml.dtd\">";
-            string correction = "<?xml version=\"1.0\" encoding=\"utf-8\"?><!DOCTYPE caseml PUBLIC \" -//Butterworths//DTD XML CASE REPORTS VER 1.0//EN\" \"file:////E:/URJ/dtd/caseml.dtd\">";
+            string correction = "<?xml version=\"1.0\" encoding=\"utf-8\"?><!DOCTYPE caseml PUBLIC \" -//Butterworths//DTD XML CASE REPORTS VER 1.0//EN\" \"file:////F:/URJ/dtd/caseml.dtd\">";
 
             string[] split = text.Split(new string[] { sep }, StringSplitOptions.RemoveEmptyEntries);
 
