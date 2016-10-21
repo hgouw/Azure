@@ -36,6 +36,8 @@ namespace Azure.ParseFiles
 
         private static bool ParseXml(string file)
         {
+            Console.WriteLine($"Parsing the file {file}");
+
             XmlReaderSettings settings = new XmlReaderSettings() { DtdProcessing = DtdProcessing.Parse };
             XmlReader reader = XmlReader.Create(file, settings);
             XDocument doc = null;
