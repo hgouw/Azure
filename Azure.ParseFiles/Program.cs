@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
+using System.Text;
 using System.Xml;
 using System.Xml.Linq;
 
@@ -38,8 +39,11 @@ namespace Azure.ParseFiles
         {
             Console.WriteLine($"Parsing the file {file}");
 
-            XmlReaderSettings settings = new XmlReaderSettings() { DtdProcessing = DtdProcessing.Parse };
-            XmlReader reader = XmlReader.Create(file, settings);
+            var settings = new XmlReaderSettings() { DtdProcessing = DtdProcessing.Parse };
+            //var reader = XmlReader.Create(file, settings);
+            var xml = File.ReadAllText(file);
+            var stream = new MemoryStream(Encoding.UTF8.GetBytes(xml));
+            var reader = XmlReader.Create(stream, settings);
             XDocument doc = null;
             try
             {
