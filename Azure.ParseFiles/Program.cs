@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
+/*
 using System.Text;
 using System.Xml;
 using System.Xml.Linq;
+*/
 using Azure.DbContexts;
 
 namespace Azure.ParseFiles
@@ -36,6 +38,7 @@ namespace Azure.ParseFiles
             Console.ReadLine();
         }
 
+/*
         private static bool ParseFiles()
         {
             var ok = true;
@@ -71,6 +74,7 @@ namespace Azure.ParseFiles
                 return false;
             }
         }
+*/
 
         private static List<CaseDoc> ParseCaseDocs()
         {
