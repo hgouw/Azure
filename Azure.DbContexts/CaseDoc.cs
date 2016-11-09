@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Azure.ParseFiles
+namespace Azure.DbContexts
 {
     public class CaseDoc
     {

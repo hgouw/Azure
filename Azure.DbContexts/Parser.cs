@@ -4,7 +4,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace Azure.ParseFiles
+namespace Azure.DbContexts
 {
     public class Parser
     {
