@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.DatabaseContext", "Az
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.ParseFiles", "Azure.ParseFiles\Azure.ParseFiles.csproj", "{2E1E1EAA-6C03-40E5-B6CB-DCC9CBF448CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.DbContexts", "Azure.DbContexts\Azure.DbContexts.csproj", "{55531405-874B-47B4-9A64-7AE7AEFC2C6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{2E1E1EAA-6C03-40E5-B6CB-DCC9CBF448CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E1E1EAA-6C03-40E5-B6CB-DCC9CBF448CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E1E1EAA-6C03-40E5-B6CB-DCC9CBF448CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55531405-874B-47B4-9A64-7AE7AEFC2C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55531405-874B-47B4-9A64-7AE7AEFC2C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55531405-874B-47B4-9A64-7AE7AEFC2C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55531405-874B-47B4-9A64-7AE7AEFC2C6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
