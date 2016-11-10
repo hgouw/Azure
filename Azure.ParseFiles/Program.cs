@@ -25,7 +25,7 @@ namespace Azure.ParseFiles
             var caseDocs = ParseCaseDocs();
             if (caseDocs.Count > 0)
             {
-                var repoes = ConvertCaseDocs(caseDocs, "nsw-");
+                var repoes = ConvertDocToRepo(caseDocs, "nsw-");
                 Console.WriteLine("Successfully parsing the files");
                 using (var db = new AzureDbContext())
                 {
@@ -92,7 +92,7 @@ namespace Azure.ParseFiles
             return caseDocs;
         }
 
-        private static List<CaseRepo> ConvertCaseDocs(List<CaseDoc> caseDocs, string prefix)
+        private static List<CaseRepo> ConvertDocToRepo(List<CaseDoc> caseDocs, string prefix)
         {
             var repoes = new List<CaseRepo>();
 
