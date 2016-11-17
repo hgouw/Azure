@@ -38,8 +38,7 @@ namespace Azure.CopyFiles
 
         private static async Task CopyFilesAsync()
         {
-            var storageAccount = CreateStorageAccountFromConnectionString(CloudConfigurationManager.GetSetting("StorageAccountConnectionString"));
-
+            var storageAccount = CloudStorageAccount.Parse(CloudConfigurationManager.GetSetting("StorageAccountConnectionString"));
             var blobClient = storageAccount.CreateCloudBlobClient();
 
             var blobContainer = blobClient.GetContainerReference(CloudConfigurationManager.GetSetting("ContainerName"));
@@ -50,7 +49,7 @@ namespace Azure.CopyFiles
             foreach (var file in files)
             {
                 var blockBlob = blobContainer.GetBlockBlobReference(Path.GetFileName(file));
-                await blockBlob.UploadFromFileAsync(file, FileMode.Open);
+                await blockBlob.UploadFromFileAsync(file); //FileMode.Open);
             }
         }
 
@@ -81,11 +80,6 @@ namespace Azure.CopyFiles
             {
                 db.SaveChanges();
             });
-        }
-
-        private static CloudStorageAccount CreateStorageAccountFromConnectionString(string storageConnectionString)
-        {
-            return CloudStorageAccount.Parse(storageConnectionString);
         }
     }
 }
