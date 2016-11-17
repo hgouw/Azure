@@ -29,10 +29,16 @@ namespace Azure.ParseFiles
                 Console.WriteLine("Successfully parsing the files");
                 using (var db = new AzureDbContext())
                 {
-                    Console.WriteLine("Started saving the data");
-                    db.CaseRepoes.AddRange(repoes);
-                    db.SaveChanges();
-                    Console.WriteLine("Successfully saving the data");
+                    try
+                    {
+                        Console.WriteLine("Started saving the data");
+                        db.CaseRepoes.AddRange(repoes);
+                        db.SaveChanges();
+                        Console.WriteLine("Successfully saving the data");
+                    }
+                    catch (Exception ex)
+                    {
+                    }
                 }
             }
             Console.ReadLine();
