@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.ReceiveEvents", "Azur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.SendQueues", "Azure.SendQueues\Azure.SendQueues.csproj", "{E6A2B76C-9F5A-4F9C-91AB-DA79264DDC13}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.RemoveFiles", "Azure.RemoveFiles\Azure.RemoveFiles.csproj", "{D6F30961-7277-4126-BA26-DE5E54DF0699}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{E6A2B76C-9F5A-4F9C-91AB-DA79264DDC13}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6A2B76C-9F5A-4F9C-91AB-DA79264DDC13}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6A2B76C-9F5A-4F9C-91AB-DA79264DDC13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6F30961-7277-4126-BA26-DE5E54DF0699}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6F30961-7277-4126-BA26-DE5E54DF0699}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6F30961-7277-4126-BA26-DE5E54DF0699}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6F30961-7277-4126-BA26-DE5E54DF0699}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
