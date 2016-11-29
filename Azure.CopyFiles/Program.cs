@@ -11,15 +11,17 @@ namespace Azure.CopyFiles
 {
     public class Program
     {
+        public static int i { get; set; }
+
         static void Main()
         {
             Console.WriteLine("Started copying files to Azure Blob Storage");
             try
             {
                 CopyFilesAsync().Wait();
-                Console.WriteLine("Successfully copying files to Azure Blob Storage");
-                SaveFilesAsynch().Wait();
-                Console.WriteLine("Successfully saving files to SQL Server Database");
+                Console.WriteLine($"Successfully copied {i} files to Azure Blob Storage");
+                //SaveFilesAsynch().Wait();
+                //Console.WriteLine("Successfully saving files to SQL Server Database");
             }
             catch (FormatException)
             {
@@ -50,6 +52,7 @@ namespace Azure.CopyFiles
             {
                 var blockBlob = blobContainer.GetBlockBlobReference(Path.GetFileName(file));
                 await blockBlob.UploadFromFileAsync(file); //FileMode.Open);
+                i++;
             }
         }
 
